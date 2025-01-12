@@ -13,6 +13,22 @@ This CTF revolves around a slightly modified implementation of a CW20 token cont
 
 ---
 
+## Getting Started
+1. Clone the Repo:
+```bash
+git clone https://github.com/tushar1698/Web3_CTF_Solutions/tree/main/Basic_Cw20_CTF.git
+cd Basic_CW20_with_Fee_CTF
+```
+
+2. Install Dependencies
+```bash
+cargo install cosmwasm-cli
+```
+3. Build and Test
+```bash
+cargo build
+cargo test
+```
 ## Key Features
 
 1. **Transfer with Fees**:
@@ -47,8 +63,6 @@ This CTF revolves around a slightly modified implementation of a CW20 token cont
 
 The following test cases in the `tests/unit_tests.rs` file will help solvers verify their understanding of the vulnerabilities
 You just need to add your tests at the bottom and run `cargo test -- --nocapture`
-
-## Getting Started
 
 ## Disclaimer
 
