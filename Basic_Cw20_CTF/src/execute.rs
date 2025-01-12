@@ -85,11 +85,10 @@ pub fn execute_transfer_from(
 
     if allowance < amount {
         deps.api.debug("Allowance insufficient, resetting to 0.");
-        // This makes it vulnerable
         ALLOWANCES.save(
             deps.storage,
             (&owner_addr, &spender),
-            &0, // Set allowance to 0 to cover up the issue
+            &0, 
         )?;
     }
 
